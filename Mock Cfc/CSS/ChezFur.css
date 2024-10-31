@@ -1,0 +1,280 @@
+
+a:link{
+	color:#ff0000;
+}
+
+/*visited link*/
+a:visited{
+	color:#ffa500
+}
+
+/*mouse over link */
+	a:hover{
+		color: #ff69b4;
+	}
+/* selected link */
+a: active{
+	color: #739bd0;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 750px,1500px;
+	background-color: #2196F3;
+	padding: 10px;
+}
+
+.grid-item{
+	background-color: rgba (255,255,255, 0.8);
+	border: 1px solid rgba (0,0,0,0.8);
+	width: 30%;
+	height: auto;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.grid-item1 {
+  grid-column: 1 / 5; /*Large Screen only*/
+  grid-column: 1, span 2; /*Small screen only*/
+  grid-column: 1 / 5;
+ 
+}
+
+.grid-item2{
+	grid-column: 5/ span 1;
+   }
+
+  .grid-item3{
+  	grid-column: 3/span 2;
+    grid-row: 2/ span 3;
+   }
+
+  .grid-item4{
+  	grid-column: 5/span 2;
+    grid-row: 3/ span 2;
+   }
+
+   .grid-item5{
+   		grid-column: 1/span 2;
+        grid-row: 2/ span 3;
+    }
+
+    .grid-item6{
+    	grid-column: 5/span 2;
+    }
+header{
+color: #ff4763;
+background-color: #f8f8ff;
+font-family: Arial
+}
+/*I chose this light pink color because it brings a sense of excitement and energy. 
+I thought the ghost white went well with the light pink because it let the pink stand out.*/
+
+
+body{
+color: #add8e6;
+background-color: #fffedd;
+font-family: Arial
+}
+/*I chose the light blue because it gives a calm and loyal feeling. The black background
+allows the light blue to stand out on its own*/
+
+div{
+color: #006994;
+background-color: #f5f5dc;
+}
+/* The sea blue brings a little bit more professionalism, and the beige background 
+sets a more business like tone*/
+
+/* Rules apply to all small sceeens/*
+@media screen and {min-width: 750px} {
+body{
+color: mocassin;
+background-color: maroon;
+font-family: Georgia
+}
+aside{
+color: #ade8ff;
+background-color: #474747;
+font-family: Georgia;
+padding: 1px;
+border: 2px solid black;
+border-radius: 15px;
+}
+nav a{
+	display: block;
+	text-align: center;
+	margin: 1.25em;
+	background-color: #d3d3d3;
+	text-align: center;
+}
+}
+li a{
+display: block;
+text-align: center
+margin: 1.25em;
+background-color: #d3d3d3;
+text-align: center;
+}
+/* A light gray color here allows the list to be seen without having the background
+be a distraction*/
+
+
+/* Rules apply to Large Screens only*/
+
+column{
+float: left;
+}
+
+.left{
+width: 50%;
+}
+
+.right{
+width: 50%;
+}
+
+.GroupCats{
+	float: left;
+	margin-right: 10px;
+}
+
+.center-list{
+	list-style-type: none;
+	padding: 10px;
+	text-align: center
+}
+
+.center-list: li {
+	display: inline;
+	margin: 10px;
+}
+
+dt{
+list-style-type: none;
+margin: 1.25em;
+font-weight: bold;
+}
+
+dd{
+list-style-type: none;
+font-style: italic;
+}
+
+.Cats img{
+	border:2px solid #ddd;
+	border-radius: 50px;
+	width: 150px;
+	height: auto
+}
+
+.Menu{
+	font-family: Feelfree;
+	text-align: center;
+}
+
+.allergies{
+	font-family: Copperplate:
+}
+
+.Content{
+	background-color:#faf9f6;
+	width: 80%; 
+}
+
+
+
+footer{
+text-align: center;
+}
+
+/*Base for styles for all screens*/
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #b8860b;
+	padding: 10px;
+}
+
+/*Styles for small screens (up to 600px)*/
+@media (max-width:600px) {
+.flex-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #b8860b;
+	overflow: scroll;
+	padding: 8px;
+}
+.image-format{
+max-width:150px;
+height: auto;
+border-radius: 60%;
+margin-left: auto;
+margin-right: auto;
+text-align: none;
+font-weight: bold;
+}
+
+.image-container{
+border-radius: 10px;
+width: 80%;
+background-color: #b8860b;
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.nav-set{
+	background-color: ffb6c1;
+	padding: 10px; /*Around nav*/
+	margin-top:25px;
+}
+
+.nav-set ul{
+	list-style-type: none; /*Discard bullet points*/
+	padding: 0;
+	margin: 0;
+	display: flex; /*Horizontal*/
+	justify-content: space-between; /*space evenly*/
+	align-items: center;
+}
+
+.nav-set li{
+	flex: 1;
+	margin: 0-10px; /*Space between items*/
+}
+
+.nav-set a{
+	background-color: #add8e6
+	color: #f8f8ff; /*Ghost white*/
+	padding: 10px;
+	font-size: 1.0em;
+	text-align: center;
+}
+
+
+
+/*Rules for Large Screen*/
+
+.navcontainer{
+	display: flex;
+	flex-direction: column; 
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
+}
+
+/*Rules for Small Screen*/
+.navcontainer{
+	display: flex;
+	flex-direction: column; 
+	justify-content: flex-start;
+	align-items: center;
+	height: none;
+}
+
